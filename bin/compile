@@ -52,6 +52,7 @@ MAVEN_URL="http://mirror.nexcess.net/apache/maven/maven-3/3.0.5/binaries/apache-
   echo -n "-----> Installing Maven 3.0.5..."
   curl --silent --max-time 60 --location $MAVEN_URL | tar xz
   mv apache-maven-3.0.5 .maven
+  ls -al .maven
 #  mkdir .m2
   chmod +x .maven/bin/mvn
   echo " done"
